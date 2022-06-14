@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            background-color: rgb(243, 208, 213);
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin-top: 50px;
+            text-align: center;
+            background-color: rgb(53, 245, 149);
+            height: 10vh;
+            padding: 20px;
+        }
+        .p1{
+            background: none;
+            font-size: xx-large;
+            font-family: Arial, Helvetica, sans-serif;
+            /* color: rgb(250, 23, 61); */
+            
+        }
+        .p2{
+            background: none;
+
+            color: rgb(59, 59, 59);
+            font: medium;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="p1">Heading 2 </span> <br>
+        <span class="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dignis  simos nisi  dolor <br> maxime perspiciatis quidem vitae, cum numquam sed corporis.</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB | DEVERSE</title>
+</head>
+<style>
+    .first{
+        background-color: red;
+        height: 200px;
+        margin-bottom: 1%;
+        width:200px;
+    }
+    .second
+    {
+        background-color: rgb(152, 21, 156);
+        margin-bottom: 1%;
+        height:200px;
+        width: 200px;
+    }  
+    .third
+    {
+        background-color:blue;
+        margin-bottom: 1%;
+        height:200px;
+        width: 200px;
+    }
+</style>
+<body>
+    <div class="first">
+
+    </div>
+    <div class="second"></div>
+    <div class="third"></div>
+</body>
+</html>
