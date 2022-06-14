@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@400;600&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+margin: 0;
+padding:0;
+text-transform: uppercase;
+}
+.main{
+    height: 100vh;
+    width:100vw;
+    background:url(../images/fb.webp);
+    background-position: center;
+    background-size: cover;
+}
+img{
+    height: 40px;
+    width:40px;
+    margin:2%;
+}
+header{
+    display: flex;
+}
+.logo{
+    background: url(../images/bestlogo-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+    border-radius:20px;
+    width: 100px;
+    height: 100px;
+    margin:4px;
+}
+nav{
+    height: 65px;
+    width:100vw;
+
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    padding: 25px 10px;
+    color: gold;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.center{
+    height: 50%;
+   display: flex;
+   /* justify-content: center; */
+    align-items: center;
+    display: block;
+    margin: 15%;
+    text-align: center;
+}
+.center pre{
+    margin:3%;
+    font-size: xx-large;
+    font-weight: 900;
+    font-size: 45px;
+    color:#ffb83f;
+}
+.center p{
+    font-weight: bold;
+    color: #e0cdac;
+}
+button{
+    border: 0;
+    margin:5%;
+    color : black;
+    font-weight: bold;
+    border-radius: 40px;
+    padding: 10px 60px;
+    background-color: white;
+    font-size:large;
+    cursor:pointer;
+    transition:all 0.6s ease;
+}
+nav ul li a:hover
+{
+    transform: translate(0,-8px);
+    font-weight: bolder;
+    color:azure;
+
+}
+button:hover{
+    transform:translate3d(5px,10px,5px);
+    background-color:rgb(145, 81, 209);
+    color:white;
+}
