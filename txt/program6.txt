@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>JAVASCRIPT 6.</title>
+</head>
+<body>
+    <h1></h1>
+    <label for="num1">Enter number : </label><input type="number" id="num1"><br><br>
+    <label for="num2">Enter number : </label><input type="number" id="num2"><br><br><br>
+    <input type="button" value="Add" onclick="add()"><br><br><br><br>
+    <label for="sum">Sum : </label> <input type="number" id="sum" readonly >
+</body>
+<script>
+    function add()
+    {
+        var x=document.getElementById("num1").value;
+        var y=document.getElementById("num2").value;
+        x=parseFloat(x);
+        y=parseFloat(y);
+    if(x==y)
+        document.getElementById("sum").value= (x+y)*3;
+    else
+        document.getElementById("sum").value=x+y;
+    }
+
+</script>
+</html>

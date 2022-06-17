@@ -1,0 +1,45 @@
+<html>
+    <head>
+    </head>
+<body>
+    Enter the Month Number <input type="number" id="m">
+    <br><br><br>
+    <input type="button" value="Check" onclick="check()">
+    <br><br><br>
+    <h1 id="M"></h1>  
+</body>
+<script>
+    function check()
+    {
+        var x=parseInt(document.getElementById("m").value);
+        switch(x)
+        {
+            case 1: document.getElementById("M").innerHTML="Its January, 31 days";
+            break;
+            case 2: document.getElementById("M").innerHTML="Its February, 28 days";
+            break;
+            case 3: document.getElementById("M").innerHTML="Its March, 31 days";
+            break;
+            case 4: document.getElementById("M").innerHTML="Its April, 30 days";
+            break;
+            case 5: document.getElementById("M").innerHTML="Its May, 31 days";
+            break;
+            case 6: document.getElementById("M").innerHTML="Its June, 30 days";
+            break;
+            case 7: document.getElementById("M").innerHTML="Its July, 31 days";
+            break;
+            case 8: document.getElementById("M").innerHTML="Its August, 31 days";
+            break;
+            case 9: document.getElementById("M").innerHTML="Its September, 30 days";
+            break;
+            case 10: document.getElementById("M").innerHTML="Its October, 31 days";
+            break;
+            case 11: document.getElementById("M").innerHTML="Its November, 30 days";
+            break;
+            case 12: document.getElementById("M").innerHTML="Its December, 31 days";
+            break;
+            default : document.getElementById("M").innerHTML="Plase enter valid month number";
+        }
+    }
+</script>
+</html>

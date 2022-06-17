@@ -1,0 +1,26 @@
+<html>
+    <head>
+            <title>JAVASCRIPT 4.</title>
+    </head>
+<body>
+    <h2>Write a JavaScript program to calculate days left until next Diwali.</h2>
+   <label for="date">Today's Date : </label><input type="text" id="date" placeholder="mm-dd-yyyy">
+    <input type="button" value="check" onclick="days()"><br><br>    
+</body>
+<script>
+    function days()
+    {
+        var x= document.getElementById("date").value;
+       var d1= new Date(x);
+       var d2= new Date('10/24/2022');
+       d2=new Date(d1.getFullYear(),10,24);
+       if(d1.getMonth==10 && d1.getDate>24)
+       {
+        d2.setFullYear(d2.getFullYear()+1);
+       }
+       let difference= d2.getTime() - d1.getTime();
+       
+       document.write("Days until next Diwali : "+(difference/(1000*60*60*24)));
+    }
+    </script>
+</html>

@@ -1,0 +1,15 @@
+<html>
+    <head><title>JAVASCRIPT 5</title>
+    </head>
+<body >
+   <h1>Print url of loading Page</h1>
+   <input type="button" value="Print" onclick="days()">
+   <h1 id="url"></h1>
+</body>
+<script>
+    function days()
+    {
+        document.getElementById("url").innerHTML=document.URL
+    }
+</script>
+</html>
