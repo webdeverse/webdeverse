@@ -1,0 +1,29 @@
+<html>
+    <head>
+    </head>
+<body>
+    <label for="str">Enter a character : </label><input type="text" id="str" maxlength="1">
+    <input type="button" value="Check" onclick="print()">
+    <h1 id="ans"></h1>
+</body>
+<script>
+    function print()
+    {
+        var ch=document.getElementById("str").value;
+        switch(ch)
+        {
+            case 'a':case ('e'):case ('i'):case ('o'):case ('A'):case('E'):case ('I'): case('O'):case ('U'):
+            case ('u'):document.getElementById("ans").innerText="its a vowel";
+            break;
+            case(' '):document.getElementById("ans").innerText="its a blank space";
+            break;
+            case('0'):case('1'):case('2'):case('3'):case('4'):case('5'):case('6'):case('7'):case('8'):
+            case('9'):document.getElementById("ans").innerText="its a number";
+            break;
+            default:document.getElementById("ans").innerText="Enter a special character or consonant";
+        }
+    }
+  
+
+</script>
+</html>

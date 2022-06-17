@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>JAVASCRIPT 3.</title>
+</head>
+<body>
+    <h1>Check whether a given year is a leap year in the Gregorian calendar </h1>
+    <label for="year">YEAR : </label> <input type="text" name="" id="year" placeholder="Enter the Year"><br>
+    <input type="button" value="Check" onclick="convert()"><br><br>
+    <label for="out"> Leap year or not : </label><input type="text" name="" id="out" readonly>
+</body>
+<script>
+    function convert()
+    {
+    var x=document.getElementById("year")
+    var y=document.getElementById("out")
+        if(parseInt(x.value)%4==0)
+        {
+            y.value="It's a Leap year"
+        }
+        else
+        {
+            y.value="Not a Leap year"
+        }
+    
+    }
+</script>
+</html>

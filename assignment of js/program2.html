@@ -1,0 +1,43 @@
+<html>
+<head><title>JAVASCRIPT 2.</title>
+</head>
+<body>
+    <h3>Enter sides of the triangle</h3>
+
+    <label for="side2">Side 2:</label><input type="text" name="" id="side2"><br><br>
+    <label for="side1">Side 1:</label><input type="text" name="" id="side1"><br><br>
+    <label for="side3">Side 3:</label><input type="text" name="" id="side3"><br><br>
+    <input type="button" value="Find Area" onclick="area()">
+    <br><br><br>
+    <label for="area">Area :</label> <input type="text" name="" id="area" readonly placeholder="Area of the triangle" onclick="area()">
+    <h3>For Example :- </h3>
+    <h4>For Sides 5,6,7</h4>
+    <label for="side1">Side 1:</label><input type="text" name=""  value="5" id="side1"><br><br>
+    <label for="side2">Side 2:</label><input type="text" name=""  value="6" id="side2"><br><br>
+    <label for="side3">Side 3:</label><input type="text" name=""  value="7" id="side3"><br><br>
+    <input type="button" value="Area for defaults" onclick="area1();">
+</body>
+<script>
+    function area()
+    {
+        var x=document.getElementById("side1").value;
+        var y=document.getElementById("side2").value;
+        var z=document.getElementById("side3").value;
+
+        var s=(parseInt(x)+parseInt(y)+parseInt(z))/2;
+        
+        var a=Math.sqrt(s*(s-x)*(s-y)*(s-z));
+        document.getElementById("area").value=a;
+
+    }
+    function area1()
+    {
+        var x=5;
+        var y=6;
+        var z=7;
+        var s=(x+y+z)/2;
+        var a=Math.sqrt(s*(s-x)*(s-y)*(s-z));
+        document.getElementById("area").value=a;
+    }
+</script>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>JAVASCRIPT 1.</title>
+</head>
+<body>
+    <h1>Temperature converter, from Celsius to Fahrenheit</h1>
+    <label for="tempcel">Temperature in celsius : </label> <input type="number" name="" id="tempcel" placeholder="Temperature in celsius"><br><br>
+    <label for="tempfar">Temperature in fahrenheit : </label><input type="number" name="" id="tempfar" readonly placeholder="Temperature in fahrenheit"><br>
+    <input type="button" value="Convert" onclick="convert()">
+</body>
+<script>
+    function convert()
+    {
+    var x=document.getElementById("tempcel")
+    var y=document.getElementById("tempfar")
+        if(x!=null)
+        {
+            y.value=x.value*9/5 + 32;
+        }
+        else
+        {
+            y.value=null;
+        }
+    
+    }
+</script>
+</html>
